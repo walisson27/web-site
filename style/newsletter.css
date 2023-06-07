@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #033244;
+    --secondary-color: #71D8FF;
+    --header-height: 62px;
+    --nav-height: 72px;
+    font-size: 14px;
+}
+
+#newsletter {
+    background: #F3F3F3;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#newsletter form {
+    width: 65%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+#newsletter p {
+    color: var(--secondary-color);
+}
+
+#newsletter form input:not([type=submit]) {
+    border: 1px solid #005271;
+    padding: 10px 0px;
+    background: transparent;
+}
+
+#newsletter form input::placeholder {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #005271;
+}

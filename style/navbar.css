@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #033244;
+    --secondary-color: #71D8FF;
+    --header-height: 62px;
+    --nav-height: 72px;
+    font-size: 14px;
+}
+
+nav {
+    height: var(--nav-height);
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+nav form {
+    font-size: 1.25rem;
+}
+
+nav form input::placeholder {
+    color: #00AEEF;
+}
+
+nav form input,
+nav form input:focus {
+    background: transparent;
+    border: 2px solid #00AEEF;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0px;
+}
+
+nav form button {
+    position: relative;
+    right: 2rem;
+}
+
+#nav-dropdown {
+    width: 80vw;
+    margin: 0px 10vw;
+    padding: 20px 10% 40px;
+    background: white;
+    position: absolute;
+    border-top: 5px solid var(--secondary-color);
+    transition: opacity .3s linear;
+}
+
+#nav-dropdown[data-state=false] {
+    opacity: 0;
+    /* display: none; */
+}
+
+#nav-dropdown[data-state=true] {
+    /* display:flex; */
+    opacity: 1;
+}
+
+#nav-dropdown {
+    color: gray;
+}
+
+#nav-dropdown hr {
+    width: 100%;
+    border-width: .1px;
+}
+
+#nav-dropdown li:first-child {
+    color: #005271;
+    font-weight: bold;
+}
+
+#nav-dropdown, #nav-dropdown ul {
+    align-items: flex-start;
+}
+
+#nav-dropdown ul li:first-child {
+    color: #005271;
+}

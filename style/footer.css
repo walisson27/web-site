@@ -1,0 +1,59 @@
+footer a::after {
+    background-color: #E2F7FF;
+}
+
+footer {
+    border-top: 5px solid var(--secondary-color);
+    background: var(--primary-color);
+    padding: 30px 0px;
+}
+
+footer>div {
+    width: 80vw;
+    margin: 0px 10vw;
+}
+
+footer ul {
+    align-items: flex-start;
+}
+
+footer>div:first-child {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    border-bottom: 2px solid white;
+}
+
+footer .mapa-do-site li {
+    color: #00AEEF;
+}
+
+footer .mapa-do-site>li:last-child * {
+    color: #B2EAFF;
+}
+
+footer .mapa-do-site ul li:first-child {
+    color: #E2F7FF;
+}
+
+footer>div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+footer>div:last-child>*:first-child {
+    color: white;
+}
+
+footer>div:last-child>*:last-child {
+    color: #71D8FF;
+}
+
+footer>div:last-child ul {
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}

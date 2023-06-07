@@ -1,0 +1,47 @@
+.blue-card {
+    background-color: #283137;
+    padding: 20px;
+    position: relative;
+    bottom: 20px;
+}
+
+.blue-card * {
+    font-family: 'Roboto Slab';
+    margin-bottom: 20px;
+}
+
+.blue-card h1 {
+    color: white;
+}
+
+.blue-card p {
+    color: #bbb;
+    font-weight: 100;
+}
+
+.blue-card a {
+    color: #00AEEF;
+    font-weight: bold;
+}
+.card-swiper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 20px;
+    transition: box-shadow 500s linear;
+    transform: scale(0.9) !important;
+}
+
+.card-swiper img {
+    width: 62.25%;
+    height: auto;
+}
+
+.card-swiper:hover {
+    box-shadow: 7px 7px 5px 1px rgba(0, 0, 0, 0.2);
+}

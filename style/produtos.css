@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #033244;
+    --secondary-color: #71D8FF;
+    --header-height: 62px;
+    --nav-height: 72px;
+    font-size: 14px;
+}
+
+
+#produtos {
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.produtos-swiper {
+    width: 100%;
+    height: min-content;
+    padding: 20px !important;
+    background: #F3F3F3;
+}
+
+.produtos-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background: #e8e8e8;
+    height: min-content;
+    padding: 10px;
+    transform: scale(0.9) !important;
+}
+
+.produtos-swiper .swiper-slide * {
+    font-family: 'Roboto Slab';
+    color: #676767;
+}
+
+.produtos-swiper .swiper-scrollbar-horizontal {
+    border-radius: 0px;
+    background: #F3F3F3;
+}
+
+.produtos-swiper .swiper-scrollbar-drag {
+    background: var(--secondary-color);
+}

@@ -1,0 +1,42 @@
+.social a i {
+    transition: all 300ms;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.social a i:not([class*=facebook]) {
+    border-radius: 50%;
+}
+
+.social a i::before {
+    position: relative;
+    bottom: 1px;
+}
+
+.social a i[class*=facebook]:hover {
+    color: #0b89f0;
+    background-size: contain;
+    background: white;
+    transform: scale(1.2);
+}
+
+.social a i[class*=instagram]:hover {
+    color: white;
+    background: linear-gradient(45deg, #ebd604 10%, #e01028 50%, #7d37ab 100%);
+    transform: scale(1.2);
+}
+
+.social a i[class*=linkedin]:hover {
+    color: #0361c0;
+    background: white;
+    transform: scale(1.2);
+}
+.social a i[class*=twitter]:hover {
+    color: #1da1f2;
+    background: white;
+    transform: scale(1.2);
+}
+.social a i[class*=youtube]:hover {
+    color: red;
+    transform: scale(1.2);
+}

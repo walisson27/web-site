@@ -1,0 +1,138 @@
+@media screen and (max-width:768px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .display-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .display-md {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .display-lg {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    footer>div:first-child {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    footer .mapa-do-site {
+        flex-direction: column;
+    }
+
+    footer>div:last-child {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    body>*:nth-child(3) {
+        margin-top: var(--header-height);
+    }
+
+    #services-selection,
+    #partners {
+        text-align: left;
+    }
+
+    #partners>* {
+        width: 100%;
+    }
+
+    #partners ul {
+        justify-content: center;
+    }
+
+    #recruit div,
+    #conheca div {
+        width: 100%;
+    }
+
+    .services-selection-swiper .swiper-scrollbar-drag {
+        background: var(--secondary-color);
+    }
+
+    #newsletter form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #services {
+        flex-direction: column-reverse !important;
+    }
+}
+
+#mobile-modal {
+    flex-direction: column;
+    background:#033244;
+    height: 100vh;
+    width: 100vw;
+    z-index:9999;
+    align-items: flex-start;
+    padding: 10px 10vw;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    color: #5eb7f2;
+}
+
+#mobile-modal li:hover {
+    color: white;
+}
+
+#mobile-modal[data-state=false] {
+    top:-100%;
+}
+
+#mobile-modal[data-state=true] {
+    top: 0px;
+}
+
+#mobile-modal hr {
+    width: 100%;
+    background: white;
+}
+
+#mobile-modal h1 {
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#mobile-modal li:nth-child(2), #mobile-modal li:nth-child(3), #mobile-modal li:nth-child(4), #mobile-modal li:nth-child(5) {
+    color: white;
+}
